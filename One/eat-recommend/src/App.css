@@ -1,38 +1,111 @@
+body {
+  background: #e9ecef;
+}
+
 .App {
   text-align: center;
+
+  width: 1118px;
+  height: 860px;
+
+  position: relative; /* 박스 아래에 추가버튼을 만들기위해서 만든 값 */
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.04);
+
+  margin: 0 auto; /* 페이지 중앙에 나타나도록 설정한다 */
+  margin-top: 96px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column; /* 위에서 아래로 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blank-nav {
+  background-color: #adb5bd;
+  background-image: linear-gradient(to right, #ced4da 50%, #ced4da 50%, #adb5bd);
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 20px 0;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box {
+  margin: 30px;
+  padding: 20px;
+  border-color: #e9ecef;
+  border-radius: 15px;
 }
+.refri {
+  display: inline-flex;
+}
+.container1 {
+  margin-top: 5px;
+  border: 3px dashed #dee2e6;
+  width: 500px;
+  height: 650px;
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.item {
+  border: 2px solid #f1f3f5;
+  font-size: 20px;
+  display: flex;
+}
+.icon1 {
+  margin-top: 100px;
+  font-size: 40px;
+  color: #adb5bd;
+}
+.container2 {
+  display: flex;
+  margin-top: 5px;
+  border: 3px dashed #dee2e6;
+  width: 500px;
+  height: 250px;
+  font-size: 20px;
+}
+.icon2 {
+  font-size: 40px;
+  color: #adb5bd;
+}
+.container3 {
+  width: 500px;
+  height: 250px;
+  border: 3px dashed #dee2e6;
+}
+.under {
+  width: 500px;
+  height: 100px;
+}
+.ready {
+  margin-top: 30px;
+  padding: 10px;
+}
+.Popapp {
+  display: flex;
+  font-size: 30px;
+}
+.apple {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.app__container {
+
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__input {
+  margin-top: 10px;
 }
+
+
+

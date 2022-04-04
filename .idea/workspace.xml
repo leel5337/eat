@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="daa64175-5c44-40d4-b5ef-db85dee8e3f7" name="Changes" comment="" />
+    <list default="true" id="daa64175-5c44-40d4-b5ef-db85dee8e3f7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/One/eat-recommend/src/components/Camera.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/One/eat-recommend/src/components/Template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/One/eat-recommend/src/components/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/One/eat-recommend/src/modal/choosemodal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/One/eat-recommend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/One/eat-recommend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/One/eat-recommend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/One/eat-recommend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/One/eat-recommend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/src/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,6 +44,15 @@
       <workItem from="1647421570917" duration="132000" />
       <workItem from="1647421738908" duration="431000" />
       <workItem from="1647422173980" duration="38000" />
+      <workItem from="1647422240110" duration="1399000" />
+      <workItem from="1647423655738" duration="284000" />
+      <workItem from="1647424035646" duration="11626000" />
+      <workItem from="1647707813608" duration="164000" />
+      <workItem from="1647708030025" duration="48264000" />
+      <workItem from="1648545463783" duration="8000" />
+      <workItem from="1648553215849" duration="74000" />
+      <workItem from="1648727887029" duration="3123000" />
+      <workItem from="1649059387375" duration="6082000" />
     </task>
     <servers />
   </component>
