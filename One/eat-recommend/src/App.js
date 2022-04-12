@@ -4,9 +4,15 @@ import { FiArrowDown, FiArrowRightCircle } from 'react-icons/fi';
 import {Modal, Button} from "react-bootstrap";
 import { Navbar, Container, Nav} from 'react-bootstrap';
 import axios from "axios";
-import Foodjson from '/Users/ijeonghyeon/github/eat/One/eat-recommend/src/foood.json';
-console.log(Foodjson);
-document.write(JSON.stringify(Foodjson));
+import Recipe from "./Recipe.js";
+import {Link, Route} from "react-router-dom";
+
+
+// import Foodjson from '../public/fod.json';
+// console.log(Foodjson);
+// document.write(JSON.stringify(Foodjson));
+
+
 
 
 function App() {
@@ -18,7 +24,7 @@ function App() {
      <div className="App">
          <Navbar bg="light" expand="lg">
              <Container>
-                 <Navbar.Brand href="#home">이현이민</Navbar.Brand>
+                 <Navbar.Brand href="#home">                이현이민 어플리케이션</Navbar.Brand>
                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
                  <Navbar.Collapse id="basic-navbar-nav">
                      <Nav className="me-auto">
@@ -102,17 +108,24 @@ function Refri() {
     let [pop, pop변경] = useState(false);
     let [modal, modal변경] = useState(false);
 
-    let [food, food변경] = useState(true);
+    let [food, food변경] = useState(null);
 
-
-    useEffect((Foodjson)=> {
-        axios.get('/Users/ijeonghyeon/github/eat/One/eat-recommend/src/foood.json')
-            .then((result)=>{
-                console.log(result.data)
-                food변경([...food, ...result.data] );
+    useEffect(()=> {
+        axios.get('https://codingapple1.github.io/shop/data2.json')
+            .then(res => {
+               return res.json();
             })
+            .then(data => {
+                food변경(data);
+            })
+    }, []);
 
-    })
+
+    // axios.get('/Users/ijeonghyeon/github/eat/One/eat-recommend/src/foood.json')
+    //     .then((result)=>{
+    //         console.log(result.data) // 위 get요청으로 가져온 데이터 출력
+    //         food변경([...food, ...result.data] );
+    //     })
 
     return (
 
@@ -120,11 +133,19 @@ function Refri() {
             <div className="container1">
                 <RefriModal show={modal} onHide={()=>{modal변경(false)}} />
                 <div className="item" onClick={()=>{modal변경(true)}}>
-                    {
-                        food.map((a,i)=>{ // a는 map이라는 반복문이 돌때마다 들어가는 shoes 데이터, i는 반복문이 돌때마다 들어가는 번호
-                            return <Food food={food[i]} i={i} />
-                        })
-                    }
+                    {/*{*/}
+                    {/*    Foodjson.map((a,i)=>{ // a는 map이라는 반복문이 돌때마다 들어가는 shoes 데이터, i는 반복문이 돌때마다 들어가는 번호*/}
+                    {/*        return <Food food={food[i]} i={i} />*/}
+                    {/*    })*/}
+                    {/*}*/}
+
+                    {/*{food && <Food food={food} title="All Food" />}*/}
+                    <ul>
+                        <li>A-1</li>
+                        <li>A-2</li>
+                        <li>A-3</li>
+                        <li>A-4</li>
+                    </ul>
                 </div>
                 <div className="item" onClick={()=>{modal변경(true)}}>
                     <ul>
@@ -181,19 +202,22 @@ function Refri() {
                     </ul>
                 </div>
                 <FiArrowDown className="icon2" />
-                <div className="container3">
-                    <div>
-                        {
-                            pop === true
-                                ? <Pop></Pop>
-                                : null
-                        }
-                    </div>
-                </div>
-                <div className="under">
-                    <button className="ready" onClick={ ()=>{pop변경(!pop)} }> 선택완료</button>
-                </div>
+
+                {/* 선택완료를 누를 시 추천리스트가 나올수 있는 창 구현 */}
+
+               <div className="under">
+                    <button className="ready">
+                        <Link exact to="/Recipe">선택완료</Link>
+                    </button>
+                   <Route path="/Recipe">
+                       <Recipe></Recipe>
+                   </Route>
+               </div>
             </div>
+            <Route path="/Recipe">
+                <Recipe></Recipe>
+            </Route>
+
         </div>
     )
 }
@@ -235,9 +259,15 @@ function RefriModal({show, onHide}) {
                         <li>
                             <label><input type="checkbox" /> A-1 </label>
                         </li>
-                        <li>A-2</li>
-                        <li>A-3</li>
-                        <li>A-4</li>
+                        <li>
+                            <label><input type="checkbox" /> A-2 </label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" /> A-3 </label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" /> A-4 </label>
+                        </li>
                     </ul>
                 </p>
             </Modal.Body>
@@ -248,10 +278,13 @@ function RefriModal({show, onHide}) {
     );
 }
 
-function Food(props) { // props안에 shoes가 들어가게된다
+function Food({ food, title }) { // props안에 shoes가 들어가게된다
     return(
-        <div> {/* 영역안에서 3등분을 하게끔 */}
-            <li><h4>{ props.food.title }</h4></li>
+        <div>
+            <h2>{title}</h2>
+            {food.map(foods => (
+                <h2>{foods.title}</h2>
+            ))}
         </div>
     )
 }
