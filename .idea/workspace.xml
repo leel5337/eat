@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="daa64175-5c44-40d4-b5ef-db85dee8e3f7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/One/eat-recommend/public/fod.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/One/eat-recommend/src/Recipe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/One/eat-recommend/src/Camera.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/One/eat-recommend/src/Refri.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/One/eat-recommend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/One/eat-recommend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/One/eat-recommend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/One/eat-recommend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/One/eat-recommend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/One/eat-recommend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +49,8 @@
       <workItem from="1648553215849" duration="74000" />
       <workItem from="1648727887029" duration="3123000" />
       <workItem from="1649059387375" duration="38735000" />
-      <workItem from="1649777720609" duration="532000" />
+      <workItem from="1649777720609" duration="966000" />
+      <workItem from="1649778811263" duration="7110000" />
     </task>
     <servers />
   </component>
