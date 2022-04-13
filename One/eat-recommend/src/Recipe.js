@@ -4,7 +4,7 @@ function Recipe() {
     return(
         <div>
             <h1>레시피</h1>
-            <p>내용입니다</p>
+            <p>연습입니다</p>
         </div>
     )
 }
